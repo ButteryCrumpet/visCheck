@@ -1,0 +1,18 @@
+.focus {
+  height: 30vh;
+  background-color: lightcoral;
+  margin-bottom: 20px;
+  transition: 0.5s ease-in;
+}
+
+.focused {
+  backgound-color: lightcyan;
+}
+
+.visible {
+  background-color: lightseagreen;
+}
+
+.vis0 {
+    background-color: lightslategray;
+}
