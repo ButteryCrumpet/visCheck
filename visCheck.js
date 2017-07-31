@@ -1,5 +1,7 @@
 $('document').ready(function() {
-    $('.focus').visCheck();
+    $('.focus').visCheck({
+        applyNumbers: true,
+    });
 });
 
 
@@ -10,7 +12,7 @@ $('document').ready(function() {
         const visable = new VisCheck(this, settings)
     };
 
-    function VisCheck(elements, settings){
+    function VisCheck(elements, c_settings){
         const _ = this;
 
         _.settings = {
@@ -18,8 +20,10 @@ $('document').ready(function() {
             notVisClass: 'not-visible',
             applyNotVisClass: false,
             numberingClassPrefix: 'vis',
-            applyNumbers: true,
+            applyNumbers: false,
         }
+
+        $.extend(_.settings, c_settings)
 
         _.elements = elements,
         _.viewframeTop;
