@@ -5,7 +5,8 @@ $('document').ready(function() {
 });
 
 
-//wrap settings in an object
+//trigger event when first enter and when leave
+//?rather than class? designer can use event to add class?
 (function($){
 
     $.fn.visCheck = function(settings) {
@@ -40,7 +41,7 @@ $('document').ready(function() {
 
         _.getFrameCoords();
         _.elements.each(function(){
-            _.checkVisibility($(this))
+            _.checkVisibility($(this));
         })
 
         if (_.settings.applyNumbers){

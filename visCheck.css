@@ -5,14 +5,10 @@
   transition: 0.5s ease-in;
 }
 
-.focused {
-  backgound-color: lightcyan;
-}
-
 .visible {
   background-color: lightseagreen;
 }
 
 .vis0 {
-    background-color: lightslategray;
+    background-color: lightcyan;
 }
